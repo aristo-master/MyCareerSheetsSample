@@ -1,0 +1,13 @@
+
+.grid-padding{
+    padding:12px;
+}
+
+.form{
+    background-color: #f7f7f9;
+    padding:15px;
+    padding-left:30px;
+    padding-right:30px;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+}

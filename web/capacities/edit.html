@@ -2,34 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>資格情報編集</title>
     <link rel="stylesheet" type="text/css"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <link rel="stylesheet" type="text/css" href="../../static/lib/aristo.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script type="text/javascript"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 
-<style>
-    .paddingTable{
-        padding:12px;
-    }
-
-    .form{
-        background-color: #f7f7f9;
-        padding:15px;
-        padding-left:30px;
-        padding-right:30px;
-    }
-
-
-
-
-</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
@@ -64,23 +48,38 @@
     <h2>資格情報編集</h2>
 
     <div class="form">
-        <div class="form-group row">
-            <label for="name" class="col-sm-4 col-form-label bg-dark text-white paddingTable">資格名</label>
-            <div class="col-sm-8 paddingTable">
-                <input type="password" class="form-control paddingTable" id="name" placeholder="資格名を入力してください。">
+
+
+        <div class="row">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">資格名</div>
+            <div class="col-md-10 grid-padding">
+                <input type="text" class="form-control" id="name" value="1982" placeholder="資格名を入力してください。"/>
             </div>
-            <label for="timing" class="col-sm-4 col-form-label bg-dark text-white paddingTable">取得時期</label>
-            <div class="input-group col-sm-8 col-md-6 col-lg-4 paddingTable">
-                <input type="text" class="form-control" id="timing" placeholder="取得年">
-                <div class="input-group-append">
-                    <span class="input-group-text">年</span>
-                </div>
-                <input type="text" class="form-control" id="timing2" placeholder="取得月">
-                <div class="input-group-append">
-                    <span class="input-group-text">月</span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">取得時期</div>
+            <div class="col-md-10 grid-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="birthYear" value="1982"
+                                       style="max-width:100px;"/>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">年</span>
+                                </div>
+                                <input type="text" class="form-control" id="birthMonh" value="09" style="max-width:100px;"/>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">月</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="text-center">
             <button class="btn btn-lg btn-primary text-white">保存</button>
