@@ -19,17 +19,12 @@
         padding:12px;
     }
 
-    .phase div{
-        padding:6px;
-        border-radius: 4px;
-        margin-right:6px;
-        margin-bottom:6px;
+    .form{
+        background-color: #f7f7f9;
+        padding:15px;
+        padding-left:30px;
+        padding-right:30px;
     }
-
-    .careerTitle{
-        margin-top:12px;
-    }
-
 
 </style>
 <body>
@@ -65,6 +60,22 @@
 
     <h2>資格情報編集</h2>
 
+    <div class="form">
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="view_name">表示名</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="view_name" placeholder="表示名を入力してください。" value="アリストマスター"/>
+            </div>
+        </div>
+
+    </div>
+
+    <hr/>
+    <div class="text-center">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
 
 </div>
 

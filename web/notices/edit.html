@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>特記事項編集</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .paddingTable{
+        padding:12px;
+    }
+
+    .form{
+        background-color: #f7f7f9;
+        padding:15px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
+    <a class="navbar-brand" href="#">私の職務経歴書</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/show.html">マイページ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/target.html">アリストマスターさんの職務経歴書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/whatsthis.html">このアプリについて</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="btn btn-warning text-dark">ログアウト</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h2>特記事項編集</h2>
+
+    <div class="form">
+        <div class="row">
+            <div class="col-md-12 bg-dark paddingTable text-white"><h2 class="h5">志向・要望・特記事項</h2></div>
+            <div class="col-md-12 paddingTable">
+                <textarea class="form-control" rows="8">フリーランスのエンジニアです。
+プログラマー上がりの業務系エンジニアで、プレイングマネージャー、システムアーキテクトのポジションを主体としています。
+得意言語としてはJava、Pythonですが、未経験領域でも独自調査で対応することも得意です。
+現場の声を聴き、お客様に寄り添った姿勢で業務に当たります。
+何か困ったことがあればご相談下さい。</textarea>
+                <div class="alert alert-info" role="alert" style="margin-top:5px;">
+                    <ul>
+                        <li>アピールポイント、やりたい事を記述して下さい。</li>
+                        <li>年収、単金等の希望があればここに記述して下さい。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="col-md-12 bg-dark paddingTable text-white"><h2 class="h5">制限事項</h2></div>
+            <div class="col-md-12 paddingTable"><textarea class="form-control"
+                                                          rows="5">特に無し（健康状態等、家庭環境等、問題無し）</textarea>
+                <div class="alert alert-info" role="alert" style="margin-top:5px;">
+                    <ul>
+                        <li>通勤時間○○分以内、など稼働に関する制限事項について記述して下さい。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="col-md-2 bg-dark paddingTable text-white"><h2 class="h5">ポートフィリオサイト</h2></div>
+            <div class="col-md-10 paddingTable">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">サイト名</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" value="アリストソリューションズ公式"
+                           placeholder="サイト名を入力して下さい">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">URL</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" value="https://www.aristo-solutions.net/"
+                           placeholder="サイトのURLを入力して下さい">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary text-white">保存</button>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="text-center">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

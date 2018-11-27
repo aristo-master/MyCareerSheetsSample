@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>主要スキル編集</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .paddingTable{
+        padding:12px;
+    }
+
+    .form{
+        background-color: #f7f7f9;
+        padding:15px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+
+
+
+
+
+
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
+    <a class="navbar-brand" href="#">私の職務経歴書</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/show.html">マイページ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/target.html">アリストマスターさんの職務経歴書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/whatsthis.html">このアプリについて</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="btn btn-warning text-dark">ログアウト</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h2>主要スキル編集</h2>
+
+    <div class="form">
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="language">言語</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="language" placeholder="言語を入力してください。"
+                       value="Java、Python、PHP、Ruby、Android"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="os">ＯＳ</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="os" placeholder="ＯＳを入力してください。" value="Windows,CentOS"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="db">ＤＢ</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="db" placeholder="ＤＢを入力してください。" value="PostgreSQL、MySQL、Oracle"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="cloud">クラウド</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="cloud" placeholder="クラウドを入力してください。" value="Amazon EC2、AWS Lambda、AWS S3、Google App Engine"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="tool">ツール類
+            </label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="tool" placeholder="ツールを入力してください。" value="Java、Python、PHP、Ruby、Android"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="business">業務知識
+            </label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="business" placeholder="業務知識を入力してください。" value="流通業界、住宅金融業界"/>
+            </div>
+        </div>
+
+
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary text-white">保存</button>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="text-center">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
