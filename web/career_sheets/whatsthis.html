@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>このアプリについて</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .question{
+        margin-top:12px;
+    }
+    .answer{
+        border-left: thin solid #848484;
+        padding:6px;
+        margin-left:12px;
+    }
+
+
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
+    <a class="navbar-brand" href="#">私の職務経歴書</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="show.html">マイページ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="target.html">アリストマスターさんの職務経歴書</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="whatsthis.html">このアプリについて<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="btn btn-warning text-dark">ログアウト</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>このアプリについて</h1>
+
+    <h2 class="h4 question">Ｑ．このアプリは何ですか？</h2>
+    <div class="answer">
+        <div>
+            <p>システムエンジニアの職務経歴を管理するシステムです。</p>
+            <p>システムエンジニアには「面談」と言って、派遣営業をする際に自分の職務経歴を客先に提示して商談を進めるのですが、
+                その際に使用する「職務経歴書」をWebで表現したシステムです。</p>
+        </div>
+    </div>
+
+    <h2 class="h4 question">Ｑ．どういう用途を想定しているの？</h2>
+    <div class="answer">
+        <div>
+            <h3 class="h5">１．フォーマットのご提案</h3>
+            <p>そもそもとして、現場で拝見する職務経歴書が読み辛いことが結構あって……。</p>
+            <p>このシステムは「読み易い職務経歴書はどういうものか？」ということを考えて作っています。
+                システムエンジニアの方は、自分の職務経歴書と比較してその在り方を考察してみては如何でしょうか。
+            </p>
+            <h3 class="h5">２．管理を楽にする</h3>
+            <p>職務経歴書は<b>エクセル方眼紙</b>で作成されていることが多いのですが、印刷崩れ、誤字、脱字など
+                つまらない問題に悩まされがちです。システム化することで、そういった煩雑な部分を軽減しています。</p>
+            <h3 class="h5">３．客先送付</h3>
+            <p>職務経歴書はエクセル方眼紙を<b>添付ファイルで送付</b>することが多いのですが、添付ファイルというのは
+                誤送信のリスクも増えたり、作業が煩雑であったりと、余り良いものではありません。</p>
+            <p>本サービスの場合は、URLだけ送付して、ファイルが必要な場合はその時に出力して頂くことが可能です。</p>
+            <h3 class="h5">４．ＳＮＳ掲載</h3>
+            <p>TwitterなどのSNSに掲載して、自分のスキルをみんなに見て貰うことが出来ます。</p>
+            <p>最近はTwitterで職探しをしているエンジニアを見かけますので、このシステムをご利用しては如何でしょうか。</p>
+        </div>
+    </div>
+
+    <h2 class="h4 question">Ｑ．使い方は？</h2>
+    <div class="answer">
+        <div>
+            <p>職務経歴の閲覧だけであればログインせずとも可能です。</p>
+            <p>自分の職務経歴を管理、編集したい場合は、ログインが必要です。</p>
+            <p>ログインにはGoogleアカウントを使用します。Googleアカウントをお持ちでない方は、先にGoogleアカウントを取得して下さい。</p>
+        </div>
+    </div>
+
+    <h2 class="h4 question">Ｑ．セキュリティ的なものは大丈夫か？</h2>
+    <div class="answer">
+        <div>
+            <p>パスワードにつきましては、GoogleのOAuth認証を使用することで、システム内にパスワードを保持しない仕組みになっています。
+                システム内にパスワードが存在しないため、パスワードが流出することはありません。
+            </p>
+            <p>個人情報につきましては、個人が特定可能と思われる「本名」などの要素は入力禁止にさせて頂いております。
+                また、企業名を記載する場合も、某○○企業のように実名を伏せた形で記載して下さい。</p>
+            <p>本システムは派遣営業に使用する経歴書を管理する為のシステムであり、資料内に個人、企業を特定可能な情報を記載しないことは
+                実業務と同じです。使用する方は業務に適した内容で記述して下さい。</p>
+        </div>
+    </div>
+
+
+</div>
+</body>
+
+</html>
