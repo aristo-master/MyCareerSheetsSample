@@ -26,6 +26,9 @@
         padding-right:30px;
     }
 
+
+
+
 </style>
 <body>
 
@@ -61,15 +64,27 @@
     <h2>資格情報編集</h2>
 
     <div class="form">
-
-        <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
-                    for="view_name">表示名</label></div>
-            <div class="col-md-10 paddingTable">
-                <input type="text" class="form-control" id="view_name" placeholder="表示名を入力してください。" value="アリストマスター"/>
+        <div class="form-group row">
+            <label for="name" class="col-sm-4 col-form-label bg-dark text-white paddingTable">資格名</label>
+            <div class="col-sm-8 paddingTable">
+                <input type="password" class="form-control paddingTable" id="name" placeholder="資格名を入力してください。">
+            </div>
+            <label for="timing" class="col-sm-4 col-form-label bg-dark text-white paddingTable">取得時期</label>
+            <div class="input-group col-sm-8 col-md-6 col-lg-4 paddingTable">
+                <input type="text" class="form-control" id="timing" placeholder="取得年">
+                <div class="input-group-append">
+                    <span class="input-group-text">年</span>
+                </div>
+                <input type="text" class="form-control" id="timing2" placeholder="取得月">
+                <div class="input-group-append">
+                    <span class="input-group-text">月</span>
+                </div>
             </div>
         </div>
 
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary text-white">保存</button>
+        </div>
     </div>
 
     <hr/>

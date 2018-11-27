@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>業務経歴編集</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .paddingTable{
+        padding:12px;
+    }
+
+    .form{
+        background-color: #f7f7f9;
+        padding:15px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
+    <a class="navbar-brand" href="#">私の職務経歴書</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/show.html">マイページ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/target.html">アリストマスターさんの職務経歴書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/whatsthis.html">このアプリについて</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="btn btn-warning text-dark">ログアウト</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h2>業務経歴編集</h2>
+
+    <div class="form">
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="view_name">プロジェクト名</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="project_name" placeholder="表示名を入力してください。"
+                       value="基幹マスタ管理システム保守開発"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label for="view_name">就業期間</label>
+            </div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="project_span" placeholder="表示名を入力してください。"
+                       value="2007年6月 ～ 2007年12月 （7ヶ月）"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="view_name">就業期間（開始）</label>
+            </div>
+            <div class="col-md-4 paddingTable">
+                <div class="input-group paddingTable">
+                    <input type="text" class="form-control" id="timing1" placeholder="年">
+                    <div class="input-group-append">
+                        <span class="input-group-text">年</span>
+                    </div>
+                    <input type="text" class="form-control" id="timing2" placeholder="月">
+                    <div class="input-group-append">
+                        <span class="input-group-text">月</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="view_name">就業期間（終了）</label>
+            </div>
+            <div class="col-md-4 paddingTable">
+                <div class="input-group paddingTable">
+                    <input type="text" class="form-control" id="timing3" placeholder="年">
+                    <div class="input-group-append">
+                        <span class="input-group-text">年</span>
+                    </div>
+                    <input type="text" class="form-control" id="timing4" placeholder="月">
+                    <div class="input-group-append">
+                        <span class="input-group-text">月</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+                    for="view_name">企業・部署</label></div>
+            <div class="col-md-10 paddingTable">
+                <input type="text" class="form-control" id="view_name" placeholder="表示名を入力してください。"
+                       value="某SIer企業システム部（自社・前職）"/>
+                <div class="alert alert-warning" role="alert" style="margin-top:5px;">
+                    <ul>
+                        <li>企業の実名は伏せて記述して下さい。（「某○○企業」などと記述）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">工数（人月）</div>
+            <div class="col-lg-4 paddingTable">
+                <input type="text" class="form-control" id="cost" placeholder="工数を入力してください。" value="3"/>
+            </div>
+            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">チーム（人数）</div>
+            <div class="col-lg-4 paddingTable">
+                <input type="text" class="form-control" id="team" placeholder="工数を入力してください。" value="3"/>
+            </div>
+            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">ポジション</div>
+            <div class="col-lg-4 paddingTable">
+                <input type="text" class="form-control" id="position" placeholder="ポジションを入力してください。" value="3"/>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">機種・ＯＳ</div>
+            <div class="col-lg-4 paddingTable"><input type="text" class="form-control" id="os"
+                                                      placeholder="ポジションを入力してください。" value="Unix"/></div>
+            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">言語</div>
+            <div class="col-lg-4 paddingTable"><input type="text" class="form-control" id="language"
+                                                      placeholder="ポジションを入力してください。" value="Java"/></div>
+            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">ＤＢ・ツール</div>
+            <div class="col-lg-4 paddingTable"><input type="text" class="form-control" id="db"
+                                                      placeholder="ポジションを入力してください。" value="Oracle"/></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 bg-dark paddingTable font-weight-bold text-white">担当フェーズ</div>
+            <div class="col-md-10 paddingTable phase">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" checked autocomplete="off">企画提案
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" checked autocomplete="off">調査分析
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" checked autocomplete="off">要件定義
+                    </label>
+                    <label class="btn btn-secondary active">
+                        <input type="checkbox" checked autocomplete="off">外部設計
+                    </label>
+                    <label class="btn btn-secondary active">
+                        <input type="checkbox" checked autocomplete="off">内部設計
+                    </label>
+                    <label class="btn btn-secondary active">
+                        <input type="checkbox" checked autocomplete="off">製造
+                    </label>
+                    <label class="btn btn-secondary active">
+                        <input type="checkbox" checked autocomplete="off">テスト
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" checked autocomplete="off">構築
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="checkbox" checked autocomplete="off">保守
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 bg-dark paddingTable font-weight-bold text-white">プロジェクト内での担当業務</div>
+            <div class="col-md-10 paddingTable">
+                <textarea class="form-control" id="message" rows="4">ＥＤＩ（電子商取引）の伝送に必要なマスタ設定の更新・管理システム。
+メンバーとしてマスタ管理システムの単体開発を担当し、JavaとJavaライブラリ、データベース、単体テストのスキルを身につけた。そして、チーム内において情報や意志連携する重要性を認識した。
+【担当工程】詳細設計、プログラミング</textarea>
+
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary text-white">保存</button>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="text-center">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
