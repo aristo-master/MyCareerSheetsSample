@@ -2,43 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>業務経歴編集</title>
     <link rel="stylesheet" type="text/css"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <link rel="stylesheet" type="text/css" href="../../static/lib/aristo.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script type="text/javascript"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 
-<style>
-    .paddingTable{
-        padding:12px;
-    }
-
-    .form{
-        background-color: #f7f7f9;
-        padding:15px;
-        padding-left:30px;
-        padding-right:30px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
@@ -75,59 +50,67 @@
     <div class="form">
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="view_name">プロジェクト名</label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="project_name" placeholder="表示名を入力してください。"
                        value="基幹マスタ管理システム保守開発"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label for="view_name">就業期間</label>
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label for="view_name">就業期間</label>
             </div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="project_span" placeholder="表示名を入力してください。"
                        value="2007年6月 ～ 2007年12月 （7ヶ月）"/>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="view_name">就業期間（開始）</label>
             </div>
-            <div class="col-md-4 paddingTable">
-                <div class="input-group paddingTable">
-                    <input type="text" class="form-control" id="timing1" placeholder="年">
+            <div class="col-md-10 grid-padding">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="timing1" placeholder="年" style="max-width:100px;">
                     <div class="input-group-append">
                         <span class="input-group-text">年</span>
                     </div>
-                    <input type="text" class="form-control" id="timing2" placeholder="月">
+                    <input type="text" class="form-control" id="timing2" placeholder="月" style="max-width:100px;">
                     <div class="input-group-append">
                         <span class="input-group-text">月</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+        </div>
+        <div class="row">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="view_name">就業期間（終了）</label>
             </div>
-            <div class="col-md-4 paddingTable">
-                <div class="input-group paddingTable">
-                    <input type="text" class="form-control" id="timing3" placeholder="年">
+            <div class="col-md-10 grid-padding">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="timing3" placeholder="年" style="max-width:100px;">
                     <div class="input-group-append">
                         <span class="input-group-text">年</span>
                     </div>
-                    <input type="text" class="form-control" id="timing4" placeholder="月">
+                    <input type="text" class="form-control" id="timing4" placeholder="月" style="max-width:100px;">
                     <div class="input-group-append">
                         <span class="input-group-text">月</span>
+                    </div>
+                    <div style="margin-left:5px;">
+                        <label class="form-check-label">
+                            <input type="checkbox" style="transform: scale(1.5); margin-left:5px;">
+                            現在
+                        </label>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="view_name">企業・部署</label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="view_name" placeholder="表示名を入力してください。"
                        value="某SIer企業システム部（自社・前職）"/>
                 <div class="alert alert-warning" role="alert" style="margin-top:5px;">
@@ -139,33 +122,43 @@
         </div>
 
         <div class="row ">
-            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">工数（人月）</div>
-            <div class="col-lg-4 paddingTable">
-                <input type="text" class="form-control" id="cost" placeholder="工数を入力してください。" value="3"/>
+            <div class="col-lg-2 bg-dark grid-padding font-weight-bold text-white">工数</div>
+            <div class="col-lg-4 grid-padding">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="cost" style="max-width:100px;" placeholder="工数">
+                    <div class="input-group-append">
+                        <span class="input-group-text">人月</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">チーム（人数）</div>
-            <div class="col-lg-4 paddingTable">
-                <input type="text" class="form-control" id="team" placeholder="工数を入力してください。" value="3"/>
+            <div class="col-lg-2 bg-dark grid-padding font-weight-bold text-white">チーム（人数）</div>
+            <div class="col-lg-4 grid-padding">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="team" style="max-width:100px;" placeholder="人数">
+                    <div class="input-group-append">
+                        <span class="input-group-text">人</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">ポジション</div>
-            <div class="col-lg-4 paddingTable">
-                <input type="text" class="form-control" id="position" placeholder="ポジションを入力してください。" value="3"/>
+            <div class="col-lg-2 bg-dark grid-padding font-weight-bold text-white">ポジション</div>
+            <div class="col-lg-4 grid-padding">
+                <input type="text" class="form-control" id="position" placeholder="ポジションを入力してください。" value="メンバー"/>
             </div>
         </div>
         <div class="row ">
-            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">機種・ＯＳ</div>
-            <div class="col-lg-4 paddingTable"><input type="text" class="form-control" id="os"
+            <div class="col-lg-2 bg-dark grid-padding font-weight-bold text-white">機種・ＯＳ</div>
+            <div class="col-lg-4 grid-padding"><input type="text" class="form-control" id="os"
                                                       placeholder="ポジションを入力してください。" value="Unix"/></div>
-            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">言語</div>
-            <div class="col-lg-4 paddingTable"><input type="text" class="form-control" id="language"
+            <div class="col-lg-2 bg-dark grid-padding font-weight-bold text-white">言語</div>
+            <div class="col-lg-4 grid-padding"><input type="text" class="form-control" id="language"
                                                       placeholder="ポジションを入力してください。" value="Java"/></div>
-            <div class="col-lg-2 bg-dark paddingTable font-weight-bold text-white">ＤＢ・ツール</div>
-            <div class="col-lg-4 paddingTable"><input type="text" class="form-control" id="db"
+            <div class="col-lg-2 bg-dark grid-padding font-weight-bold text-white">ＤＢ・ツール</div>
+            <div class="col-lg-4 grid-padding"><input type="text" class="form-control" id="db"
                                                       placeholder="ポジションを入力してください。" value="Oracle"/></div>
         </div>
         <div class="row">
-            <div class="col-md-2 bg-dark paddingTable font-weight-bold text-white">担当フェーズ</div>
-            <div class="col-md-10 paddingTable phase">
+            <div class="col-md-2 bg-dark grid-padding font-weight-bold text-white">担当フェーズ</div>
+            <div class="col-md-10 grid-padding phase">
                 <div class="btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-secondary">
                         <input type="checkbox" checked autocomplete="off">企画提案
@@ -198,8 +191,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2 bg-dark paddingTable font-weight-bold text-white">プロジェクト内での担当業務</div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-2 bg-dark grid-padding font-weight-bold text-white">プロジェクト内での担当業務</div>
+            <div class="col-md-10 grid-padding">
                 <textarea class="form-control" id="message" rows="4">ＥＤＩ（電子商取引）の伝送に必要なマスタ設定の更新・管理システム。
 メンバーとしてマスタ管理システムの単体開発を担当し、JavaとJavaライブラリ、データベース、単体テストのスキルを身につけた。そして、チーム内において情報や意志連携する重要性を認識した。
 【担当工程】詳細設計、プログラミング</textarea>

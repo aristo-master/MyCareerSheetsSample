@@ -2,37 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>主要スキル編集</title>
     <link rel="stylesheet" type="text/css"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <link rel="stylesheet" type="text/css" href="../../static/lib/aristo.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script type="text/javascript"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 
-<style>
-    .paddingTable{
-        padding:12px;
-    }
-
-    .form{
-        background-color: #f7f7f9;
-        padding:15px;
-        padding-left:30px;
-        padding-right:30px;
-    }
-
-
-
-
-
-
-
-</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
@@ -69,52 +50,55 @@
     <div class="form">
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="language">言語</label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="language" placeholder="言語を入力してください。"
                        value="Java、Python、PHP、Ruby、Android"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="os">ＯＳ</label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="os" placeholder="ＯＳを入力してください。" value="Windows,CentOS"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="db">ＤＢ</label></div>
-            <div class="col-md-10 paddingTable">
-                <input type="text" class="form-control" id="db" placeholder="ＤＢを入力してください。" value="PostgreSQL、MySQL、Oracle"/>
+            <div class="col-md-10 grid-padding">
+                <input type="text" class="form-control" id="db" placeholder="ＤＢを入力してください。"
+                       value="PostgreSQL、MySQL、Oracle"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="cloud">クラウド</label></div>
-            <div class="col-md-10 paddingTable">
-                <input type="text" class="form-control" id="cloud" placeholder="クラウドを入力してください。" value="Amazon EC2、AWS Lambda、AWS S3、Google App Engine"/>
+            <div class="col-md-10 grid-padding">
+                <input type="text" class="form-control" id="cloud" placeholder="クラウドを入力してください。"
+                       value="Amazon EC2、AWS Lambda、AWS S3、Google App Engine"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="tool">ツール類
             </label></div>
-            <div class="col-md-10 paddingTable">
-                <input type="text" class="form-control" id="tool" placeholder="ツールを入力してください。" value="Java、Python、PHP、Ruby、Android"/>
+            <div class="col-md-10 grid-padding">
+                <input type="text" class="form-control" id="tool" placeholder="ツールを入力してください。"
+                       value="Java、Python、PHP、Ruby、Android"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="business">業務知識
             </label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="business" placeholder="業務知識を入力してください。" value="流通業界、住宅金融業界"/>
             </div>
         </div>

@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>基本情報編集</title>
     <link rel="stylesheet" type="text/css"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <link rel="stylesheet" type="text/css" href="../../static/lib/aristo.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script type="text/javascript"
@@ -15,9 +15,6 @@
 </head>
 
 <style>
-    .paddingTable{
-        padding:12px;
-    }
 
     .phase div{
         padding:6px;
@@ -29,14 +26,6 @@
     .careerTitle{
         margin-top:12px;
     }
-
-    .form{
-        background-color: #f7f7f9;
-        padding:15px;
-        padding-left:30px;
-        padding-right:30px;
-    }
-
 
 
 </style>
@@ -75,9 +64,9 @@
     <div class="form">
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="view_name">表示名</label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="view_name" placeholder="表示名を入力してください。" value="アリストマスター"/>
                 <div class="alert alert-warning" role="alert" style="margin-top:5px;">
                     <ul>
@@ -89,9 +78,9 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="message">メッセージ</label></div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-10 grid-padding">
                 <textarea class="form-control" id="message">アリストソリューションズ代表。 業務系システムを中心に折衝、要件定義から設計、製造、保守まで幅広く経験。 ＰＭ、ＰＬ経験あり。</textarea>
 
                 <div class="alert alert-info" role="alert" style="margin-top:5px;">
@@ -105,20 +94,20 @@
         <br/>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white"><label
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white"><label
                     for="initial">イニシャル</label></div>
-            <div class="col-md-4 paddingTable">
+            <div class="col-md-4 grid-padding">
                 <input type="text" class="form-control" id="initial" placeholder="イニシャル" value="E.T">
             </div>
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white">性別</div>
-            <div class="col-md-4 paddingTable">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">性別</div>
+            <div class="col-md-4 grid-padding">
                 <input type="text" class="form-control" id="sex" placeholder="性別" value="男">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white">氏名（漢字）</div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">氏名（漢字）</div>
+            <div class="col-md-10 grid-padding">
                 <div class="form-row">
                     <div class="col-md-6">
                         <label for="validationServer01">苗字</label>
@@ -139,8 +128,8 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white">氏名（カナ）</div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">氏名（カナ）</div>
+            <div class="col-md-10 grid-padding">
                 <div class="form-row">
                     <div class="col-md-6">
                         <label for="validationServer01">ミョウジ</label>
@@ -161,26 +150,35 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white">生年月日</div>
-            <div class="col-md-10 paddingTable">
-                <div class="form-group row">
-                    <div class="input-group col-sm-8 col-lg-6">
-                        <input type="text" class="form-control" id="birthYear" value="1982">
-                        <div class="input-group-append">
-                            <span class="input-group-text">年</span>
-                        </div>
-                        <input type="text" class="form-control" id="birthMonh" value="09">
-                        <div class="input-group-append">
-                            <span class="input-group-text">月生まれ</span>
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">生年月日</div>
+            <div class="col-md-10 grid-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select class="form-control" id="birthYear" style="max-width:100px;">
+                                    <option></option>
+                                    <option selected>1982</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">年</span>
+                                </div>
+                                <select class="form-control" id="birthMonh" style="max-width:100px;">
+                                    <option></option>
+                                    <option selected>09</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">月生まれ</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white">最終学歴</div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">最終学歴</div>
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="academy" placeholder="表示名を入力してください。"
                        value="四年制大学 工学部 物理工学課　卒業"/>
 
@@ -193,8 +191,8 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2 paddingTable font-weight-bold bg-dark text-white">最寄駅</div>
-            <div class="col-md-10 paddingTable">
+            <div class="col-md-2 grid-padding font-weight-bold bg-dark text-white">最寄駅</div>
+            <div class="col-md-10 grid-padding">
                 <input type="text" class="form-control" id="station" placeholder="最寄駅を入力してください。"
                        value="非公開（横浜近郊在住）"/>
 
@@ -212,13 +210,14 @@
             <button class="btn btn-lg btn-primary text-white">保存</button>
         </div>
 
-        <hr/>
-        <div class="text-center">
-            <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
-        </div>
-
 
     </div>
+
+    <hr/>
+    <div class="text-center">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
+
 </div>
 </body>
 
