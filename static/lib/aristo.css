@@ -11,3 +11,8 @@
     border: 1px solid #343a40;
     border-radius: 4px;
 }
+
+.checkbox-lg{
+    transform: scale(1.5);
+    margin-left:5px;
+}

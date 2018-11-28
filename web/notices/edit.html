@@ -49,9 +49,11 @@
 
     <div class="form">
         <div class="row">
-            <div class="col-md-12 bg-dark grid-padding text-white"><h2 class="h5">志向・要望・特記事項</h2></div>
+            <div class="col-md-12 bg-dark grid-padding text-white">
+                <label for="notice" class="h5">志向・要望・特記事項</label>
+            </div>
             <div class="col-md-12 grid-padding">
-                <textarea class="form-control" rows="8">フリーランスのエンジニアです。
+                <textarea class="form-control" id="notice" rows="8">フリーランスのエンジニアです。
 プログラマー上がりの業務系エンジニアで、プレイングマネージャー、システムアーキテクトのポジションを主体としています。
 得意言語としてはJava、Pythonですが、未経験領域でも独自調査で対応することも得意です。
 現場の声を聴き、お客様に寄り添った姿勢で業務に当たります。
@@ -66,9 +68,11 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 bg-dark grid-padding text-white"><h2 class="h5">制限事項</h2></div>
-            <div class="col-md-12 grid-padding"><textarea class="form-control"
-                                                          rows="5">特に無し（健康状態等、家庭環境等、問題無し）</textarea>
+            <div class="col-md-12 bg-dark grid-padding text-white">
+                <label for="restriction" class="h5">制限事項</label>
+            </div>
+            <div class="col-md-12 grid-padding">
+                <textarea class="form-control" id="restriction" rows="5">特に無し（健康状態等、家庭環境等、問題無し）</textarea>
                 <div class="alert alert-info" role="alert" style="margin-top:5px;">
                     <ul>
                         <li>通勤時間○○分以内、など稼働に関する制限事項について記述して下さい。</li>
@@ -78,18 +82,21 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2 bg-dark grid-padding text-white"><h2 class="h5">ポートフィリオサイト</h2></div>
-            <div class="col-md-10 grid-padding">
+            <div class="col-md-12 bg-dark grid-padding text-white">
+                <label for="portfolio_name" class="h5">ポートフィリオサイト</label>
+            </div>
+            <div class="col-md-12 grid-padding">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">サイト名</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" value="アリストソリューションズ公式"
-                           placeholder="サイト名を入力して下さい">
+                    <label for="portfolio_name">サイト名</label>
+                    <input type="text" class="form-control" id="portfolio_name"
+                           value="アリストソリューションズ公式"
+                           placeholder="サイト名を入力して下さい"/>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">URL</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    <label for="portfolio_name_url">URL</label>
+                    <input type="text" class="form-control" id="portfolio_name_url"
                            value="https://www.aristo-solutions.net/"
-                           placeholder="サイトのURLを入力して下さい">
+                           placeholder="サイトのURLを入力して下さい"/>
                 </div>
             </div>
         </div>
