@@ -12,6 +12,17 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <style>
+
+
+    .btn-group-toggle>.btn, .btn-group-toggle>.btn-group>.btn{
+        margin-bottom:6px;
+    }
+
+
+
+    </style>
 </head>
 
 <body>
@@ -92,29 +103,31 @@
                 <label for="working_end_year">就業期間（終了）</label>
             </div>
             <div class="col-md-10 grid-padding">
-                <div class="input-group">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <select class="form-control" id="working_end_year" style="max-width:100px;">
-                                    <option></option>
-                                    <option selected>2007</option>
-                                </select>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">年</span>
-                                </div>
-                                <select class="form-control" id="working_end_month" style="max-width:100px;">
-                                    <option></option>
-                                    <option selected>04</option>
-                                </select>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">月</span>
-                                </div>
-                                <div style="margin-left:5px;">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="checkbox-lg">
-                                        現在
-                                    </label>
+                <div class="row">
+                    <div class="input-group">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <select class="form-control" id="working_end_year" style="max-width:100px;">
+                                        <option></option>
+                                        <option selected>2007</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">年</span>
+                                    </div>
+                                    <select class="form-control" id="working_end_month" style="max-width:100px;">
+                                        <option></option>
+                                        <option selected>04</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">月</span>
+                                    </div>
+                                    <div style="margin-left:5px;">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="checkbox-lg">
+                                            現在
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -190,35 +203,37 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2 bg-dark grid-padding font-weight-bold text-white">担当フェーズ</div>
+            <div class="col-md-2 bg-dark grid-padding font-weight-bold text-white">
+                <label>担当フェーズ</label>
+            </div>
             <div class="col-md-10 grid-padding phase">
                 <div class="btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-secondary">
-                        <input type="checkbox" checked autocomplete="off">企画提案
+                        <input type="checkbox"/>企画提案
                     </label>
                     <label class="btn btn-secondary">
-                        <input type="checkbox" checked autocomplete="off">調査分析
+                        <input type="checkbox"/>調査分析
                     </label>
                     <label class="btn btn-secondary">
-                        <input type="checkbox" checked autocomplete="off">要件定義
+                        <input type="checkbox"/>要件定義
                     </label>
                     <label class="btn btn-secondary active">
-                        <input type="checkbox" checked autocomplete="off">外部設計
+                        <input type="checkbox"/>外部設計
                     </label>
                     <label class="btn btn-secondary active">
-                        <input type="checkbox" checked autocomplete="off">内部設計
+                        <input type="checkbox"/>内部設計
                     </label>
                     <label class="btn btn-secondary active">
-                        <input type="checkbox" checked autocomplete="off">製造
+                        <input type="checkbox"/>製造
                     </label>
                     <label class="btn btn-secondary active">
-                        <input type="checkbox" checked autocomplete="off">テスト
+                        <input type="checkbox"/>テスト
                     </label>
                     <label class="btn btn-secondary">
-                        <input type="checkbox" checked autocomplete="off">構築
+                        <input type="checkbox"/>構築
                     </label>
                     <label class="btn btn-secondary">
-                        <input type="checkbox" checked autocomplete="off">保守
+                        <input type="checkbox"/>保守
                     </label>
                 </div>
             </div>
