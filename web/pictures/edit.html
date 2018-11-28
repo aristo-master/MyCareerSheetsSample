@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>プロフィール画像編集</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/lib/aristo.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
+    <a class="navbar-brand" href="#">プロフィール画像編集</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/show.html">マイページ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/target.html">アリストマスターさんの職務経歴書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../career_sheets/whatsthis.html">このアプリについて</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="btn btn-warning text-dark">ログアウト</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>プロフィール画像編集</h1>
+    <div class="text-right" style="margin-bottom:5px;">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
+
+    <div class="form">
+
+        <div class="row">
+            <div class="col-md-12 grid-padding font-weight-bold bg-dark text-white">
+                現在のプロフィール画像
+            </div>
+            <div class="col-md-12 grid-padding text-center">
+                <img src="../../static/img/uzu.png" style="width:100%; max-width:240px;"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 grid-padding">
+                <div class="custom-file">
+                    <input type="file" id="picture">
+                    <label class="custom-file-label" for="picture">ファイルを選択してください。</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary text-white">保存</button>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="text-center">
+        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
