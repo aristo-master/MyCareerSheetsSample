@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>プロフィール画像編集</title>
+    <title>ログイン</title>
     <link rel="stylesheet" type="text/css"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../static/lib/aristo.css"/>
@@ -12,12 +12,27 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 </head>
 
+<style>
+
+.bg-google {
+  background-color: #dd4b39;
+}
+
+.bg-google:hover {
+  opacity: .8;
+  text-decoration: none;
+}
+
+</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:12px;">
-    <a class="navbar-brand" href="#">プロフィール画像編集</a>
+    <a class="navbar-brand" href="#">私の職務経歴書</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,13 +41,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../career_sheets/show.html">マイページ</a>
+                <a class="nav-link" href="show.html">マイページ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../career_sheets/target.html">アリストマスターさんの職務経歴書</a>
+                <a class="nav-link" href="target.html">アリストマスターさんの職務経歴書</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../career_sheets/whatsthis.html">このアプリについて</a>
+                <a class="nav-link" href="whatsthis.html">このアプリについて</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -45,43 +60,18 @@
 
 <div class="container">
 
-    <h1>プロフィール画像編集</h1>
-    <div class="text-right" style="margin-bottom:5px;">
-        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
-    </div>
+    <h1>ログイン</h1>
 
-    <div class="form">
+    <p>以下のボタンよりログインして下さい。</p>
 
-        <div class="row">
-            <div class="col-md-12 grid-padding font-weight-bold bg-dark text-white">
-                現在のプロフィール画像
-            </div>
-            <div class="col-md-12 grid-padding text-center">
-                <img src="../../static/img/uzu.png" style="width:100%; max-width:240px;"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 grid-padding">
-                <div class="custom-file">
-                    <input type="file" id="picture">
-                    <label class="custom-file-label" for="picture">ファイルを選択してください。</label>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center">
-            <button class="btn btn-lg btn-primary text-white">保存</button>
-        </div>
-    </div>
-
-    <hr/>
     <div class="text-center">
-        <a href="../career_sheets/show.html" class="btn btn-lg btn-light">戻る</a>
+        <button class="btn btn-lg text-white bg-google">
+            <i class="fab fa-google"></i><span> Googleアカウントでログイン</span>
+        </button>
     </div>
+
 
 </div>
-
 
 </body>
 
