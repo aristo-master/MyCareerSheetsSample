@@ -4,6 +4,10 @@
 
 そのサンプルHTMLをGitHub上に置かせて頂いております。
 
+ - [私の職務経歴書]( https://aristo-master.github.io/MyCareerSheetsSample/web/career_sheets/show.html)
+
 詳細が気になる方は作者までお問い合わせください。
 
  - [アリスト戦記](https://blog.aristo-solutions.net/)
+ 
+ 
